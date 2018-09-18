@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  
+  
+  <title>Train Schedule</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <!-- Added Moment JS -->
+  <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+ 
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  
+ 
+</head>
+
+<body>
+    <div class = "bg"></div>
+  <div class="jumbotron" id = "jumbotron">
+    <h1 class="text-center">Train Schedule</h1>
+    </div>
+    
+  </div>
+
+    <div class="row">
+
+        <div class="col-md-12">
+  
+          <!-- Current Employees-->
+          <div class="card mb-4">
+            <div class="card-body">
+              Trains
+              <table class="table table-sm table-hover" id='employee-table'>
+                <thead>
+                  <tr>
+                    <th scope="col">Train</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">First Train Time</th>
+                    <th scope="col">Frequency</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+          <!-- Add Employee  -->
+          <div class="card mb-4 p-4">
+            <div class="card-body">
+              Add Employee
+              <!-- Entry Form -->
+              <form>
+                <div class="form-group row">
+                  <label for="train-display">Train</label>
+                  <input class="form-control" id="train-display" placeholder="choo choo" type="text">
+                </div>
+                <div class="form-group row">
+                  <label for="role-input">Destination: </label>
+                  <input class="destination-display" id="destination-display" placeholder="Tokyo" type="text">
+                </div>
+                <div class="form-group row">
+                  <label for="firstTrainTime-display"> hh:mm</label>
+                  <input class="form-control" id="start-input" placeholder="05:00" type="text">
+                </div>
+                <div class="form-group row">
+                  <label for="frequency-display">Frequency</label>
+                  <input class="form-control" id="frequency-display" placeholder="12" type="text">
+                </div>
+                <button class="btn btn-primary float-right" id="add-train">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  <!-- Script -->
+
+  
+   
+
+  <script src ="main.js"></script>
+    
+   
+    
+
+</body>
+
+
+
+
+</html>
